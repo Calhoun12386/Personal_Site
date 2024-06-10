@@ -7,7 +7,10 @@ nav {
     background-color: black;
     padding: 0px 40px;
     font-size: x-large;
-    height:75px;
+    height: 75px;
+    position: fixed;
+    right: 0;
+    left: 0;
 }
 
 .active {
@@ -23,10 +26,11 @@ a {
 }
 
 
-html,body {
-    height:100vh;
+html,
+body {
+    height: 100vh;
     margin: 0px;
-    
+
 }
 
 .bg {
@@ -45,43 +49,86 @@ footer {
     background-color: black;
     padding: 0px 40px;
     font-size: x-large;
-    height:80px;
+    height: 80px;
     overflow: hidden;
     text-decoration: center;
-    
+
+
+
 }
 
-  .responsive {
-    width:15%;
-    height:auto;
-    float:right;
-    margin: 5% 9%;
-  }
-
-footer a{
-   margin-left: 50%;
-   margin-right: 50%;
-   width:fit-content;
+.responsive {
+    width: 15%;
+    height: auto;
+    float: right;
+    margin: 10% 9%;
 }
 
-.quote{
-    font-size:50px;
-    color:rgb(12, 44, 25);
-    Margin-top:50px;
-    margin-left:140px;
-    font-weight:bold;
+footer a {
+    margin-left: 50%;
+    margin-right: 50%;
+    width: fit-content;
 }
+
+.quote {
+    font-size: 50px;
+    color: rgb(12, 44, 25);
+    margin-left: 140px;
+    font-weight: bold;
+    padding-top: 3em;
+    display: flex;
+
+}
+
 html {
-    background-color: grey;
+    background-color: slategray;
     font-size: 16px;
     font-family: sans-serif;
-  }
-  .about {
-    background-color: #1034a6;
+}
+
+.about {
+    background-color: rgb(10, 63, 10);
     box-shadow: 0 0 12px -2px black;
-    height: 100vh;
-    padding: 0;
-    max-width: 960px;
+    max-width: 1400px;
     margin: 0 auto;
-    
-  }
+}
+
+.about-header {
+    color: cornsilk;
+    margin: 0;
+    padding: 115px 30px 20px;
+    text-align: center;
+}
+
+section {
+    border-top: 1px solid silver;
+    font-size: 16px;
+    color: silver;
+    font-size: 1.25em;
+    padding: 15px;
+    padding-bottom: 45px;
+}
+
+section h2 {
+    color: cornsilk;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.about-section img {
+    height: 225px;
+}
+
+.about-section:nth-of-type(1)>img {
+    float: right;
+    margin: 10px;
+}
+.about-section:nth-of-type(2)>img {
+    float: left;
+    margin: 10px;
+    margin-right: 20px;
+}
+.about-section:nth-of-type(3)>img{
+    float:right;
+    margin:10px;
+}
