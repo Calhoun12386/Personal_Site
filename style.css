@@ -52,9 +52,6 @@ footer {
     height: 80px;
     overflow: hidden;
     text-decoration: center;
-
-
-
 }
 
 .responsive {
@@ -68,6 +65,7 @@ footer a {
     margin-left: 50%;
     margin-right: 50%;
     width: fit-content;
+   
 }
 
 .quote {
@@ -91,6 +89,8 @@ html {
     box-shadow: 0 0 12px -2px black;
     max-width: 1400px;
     margin: 0 auto;
+    padding:20px;
+   
 }
 
 .about-header {
@@ -100,8 +100,8 @@ html {
     text-align: center;
 }
 
-section {
-    border-top: 1px solid silver;
+section{
+    border-top: 2px solid silver;
     font-size: 16px;
     color: silver;
     font-size: 1.25em;
@@ -129,6 +129,29 @@ section h2 {
     margin-right: 20px;
 }
 .about-section:nth-of-type(3)>img{
+    float:right;
+    margin:10px;
+}
+
+#folio_header{
+    margin: 0;
+    color:cornsilk;
+    padding:115px 30px 20px;
+}
+
+.project img {
+    height: 225px;
+}
+.project:nth-of-type(1)>img {
+    float: right;
+    margin: 10px;
+}
+.project:nth-of-type(2)>img {
+    float: left;
+    margin: 10px;
+    margin-right: 20px;
+}
+.project:nth-of-type(3)>img{
     float:right;
     margin:10px;
 }
