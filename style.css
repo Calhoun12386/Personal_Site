@@ -11,6 +11,7 @@ nav {
     position: fixed;
     right: 0;
     left: 0;
+    text-shadow: 1px 1px 1px aliceblue;
 }
 
 .active {
@@ -23,6 +24,10 @@ a {
     margin: 0 5px;
     padding: 10px;
     color: seagreen;
+}
+
+a:hover {
+    border-bottom: 5px solid aliceblue;
 }
 
 
@@ -55,8 +60,9 @@ footer {
 }
 
 .responsive {
-    width: 15%;
-    height: auto;
+    width: 305px;
+    /*w=15% h=auto*/
+    height: 325;
     float: right;
     margin: 10% 9%;
 }
@@ -65,7 +71,7 @@ footer a {
     margin-left: 50%;
     margin-right: 50%;
     width: fit-content;
-   
+
 }
 
 .quote {
@@ -75,6 +81,7 @@ footer a {
     font-weight: bold;
     padding-top: 3em;
     display: flex;
+    text-shadow: 2px 2px aliceblue;
 
 }
 
@@ -89,8 +96,7 @@ html {
     box-shadow: 0 0 12px -2px black;
     max-width: 1400px;
     margin: 0 auto;
-    padding:20px;
-   
+    padding: 20px;
 }
 
 .about-header {
@@ -100,7 +106,7 @@ html {
     text-align: center;
 }
 
-section{
+section {
     border-top: 2px solid silver;
     font-size: 16px;
     color: silver;
@@ -123,35 +129,154 @@ section h2 {
     float: right;
     margin: 10px;
 }
+
 .about-section:nth-of-type(2)>img {
     float: left;
     margin: 10px;
     margin-right: 20px;
 }
-.about-section:nth-of-type(3)>img{
-    float:right;
-    margin:10px;
+
+.about-section:nth-of-type(3)>img {
+    float: right;
+    margin: 10px;
 }
 
-#folio_header{
+#folio_header {
     margin: 0;
-    color:cornsilk;
-    padding:115px 30px 20px;
+    color: cornsilk;
+    padding: 115px 30px 20px;
 }
 
 .project img {
     height: 225px;
 }
+
 .project:nth-of-type(1)>img {
     float: right;
     margin: 10px;
 }
+
 .project:nth-of-type(2)>img {
     float: left;
     margin: 10px;
     margin-right: 20px;
 }
-.project:nth-of-type(3)>img{
-    float:right;
-    margin:10px;
+
+.project:nth-of-type(3)>img {
+    float: right;
+    margin: 10px;
+}
+
+.contact-wrap {
+    color: cornsilk;
+    padding: 100px;
+    font-size: 1.5em;
+    height: 65vh;
+}
+
+.form {
+    margin: 20px 150px;
+    font-size: 1.25em;
+}
+
+input {
+    width: 76%;
+    height: 30px;
+    font-size: 1em;
+    background-color: cornsilk;
+}
+
+input:hover {
+    background-color: khaki;
+}
+
+#email {
+    margin-left: 5px;
+
+}
+
+#message-text {
+    font-size: 1em;
+    margin: 10px 0;
+    background-color: cornsilk;
+}
+
+#message-text:hover {
+    background-color: khaki;
+}
+
+.line {
+    margin-bottom: 10px;
+}
+
+button {
+    height: 2em;
+    width: 5em;
+    font-size: x-large;
+    font-weight: 700;
+    box-shadow: 0 0 7px 1px cornsilk;
+}
+
+button:hover {
+    background-color: khaki;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+
+        font-size: medium;
+    }
+
+    .active {
+        border-bottom: none;
+    }
+
+    a {
+        font-size: large;
+    }
+
+    .quote {
+
+        font-size: 30px;
+        padding-top: 75px;
+        margin: 0;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 3px 3px 1px black;
+    }
+
+    .responsive {
+        width: 50%;
+        padding-top: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        margin-top: 0;
+    }
+
+    .contact-wrap {
+        width:100%;
+        height:95vh;
+        padding: 80px 0 0 0;
+        font-size: small;
+    }
+
+    .form {
+        width:100%;
+        margin: 0;
+    }
+
+    #message-text {
+        width: 90%;
+    }
+
+    .line {
+        width: 100%;
+    }
+    button{
+        height:auto;
+        font-size: large;
+    }
+
 }
